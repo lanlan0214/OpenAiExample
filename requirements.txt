@@ -1,0 +1,11 @@
+安裝套件:
+pip install openai streamlit python-dotenv
+
+運行應用程式:
+streamlit run test.py
+
+註冊OpenAI API Key:
+網址 : https://platform.openai.com/settings/organization/api-keys
+
+Vscode延伸模組下載:
+@id:ms-python.python
