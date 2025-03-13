@@ -1,0 +1,71 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.0">
+  <diagram name="第 1 页" id="MfS198Wy1NwZ1x_ISPqj">
+    <mxGraphModel dx="3033" dy="1188" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HUObDAANdCtITk5p9dY0-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=20;" edge="1" parent="1" source="HUObDAANdCtITk5p9dY0-1" target="HUObDAANdCtITk5p9dY0-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HUObDAANdCtITk5p9dY0-1" value="&lt;font&gt;使用者輸入問題&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="-620" y="715" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="HUObDAANdCtITk5p9dY0-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=20;" edge="1" parent="1" source="HUObDAANdCtITk5p9dY0-2" target="HUObDAANdCtITk5p9dY0-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HUObDAANdCtITk5p9dY0-2" value="&lt;font&gt;Streamlit 前端接收輸入&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="-400" y="720" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HUObDAANdCtITk5p9dY0-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=20;" edge="1" parent="1" source="HUObDAANdCtITk5p9dY0-4" target="HUObDAANdCtITk5p9dY0-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HUObDAANdCtITk5p9dY0-4" value="&lt;font&gt;傳遞請求給 Python 後端&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="-90" y="720" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HUObDAANdCtITk5p9dY0-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=20;" edge="1" parent="1" source="HUObDAANdCtITk5p9dY0-6" target="HUObDAANdCtITk5p9dY0-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HUObDAANdCtITk5p9dY0-6" value="&lt;font&gt;呼叫 OpenAI API&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="220" y="720" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HUObDAANdCtITk5p9dY0-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=20;" edge="1" parent="1" source="HUObDAANdCtITk5p9dY0-8" target="HUObDAANdCtITk5p9dY0-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HUObDAANdCtITk5p9dY0-16" value="&lt;font&gt;否&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;" vertex="1" connectable="0" parent="HUObDAANdCtITk5p9dY0-14">
+          <mxGeometry x="0.1215" y="1" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HUObDAANdCtITk5p9dY0-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=20;" edge="1" parent="1" source="HUObDAANdCtITk5p9dY0-8" target="HUObDAANdCtITk5p9dY0-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HUObDAANdCtITk5p9dY0-17" value="&lt;font&gt;是&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;" vertex="1" connectable="0" parent="HUObDAANdCtITk5p9dY0-15">
+          <mxGeometry x="0.173" y="3" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HUObDAANdCtITk5p9dY0-8" value="&lt;font&gt;API 是否回應？&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="520" y="658.12" width="200" height="213.75" as="geometry" />
+        </mxCell>
+        <mxCell id="HUObDAANdCtITk5p9dY0-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=20;" edge="1" parent="1" source="HUObDAANdCtITk5p9dY0-11" target="HUObDAANdCtITk5p9dY0-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HUObDAANdCtITk5p9dY0-11" value="&lt;font&gt;API 回傳診斷結果&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="790" y="871.87" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HUObDAANdCtITk5p9dY0-13" value="&lt;font&gt;等待 10 秒後重試&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="770" y="568.12" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HUObDAANdCtITk5p9dY0-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=20;" edge="1" parent="1" source="HUObDAANdCtITk5p9dY0-18" target="HUObDAANdCtITk5p9dY0-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HUObDAANdCtITk5p9dY0-18" value="&lt;font&gt;後端解析回應&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="871.87" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HUObDAANdCtITk5p9dY0-20" value="&lt;font&gt;顯示診斷結果&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="866.87" width="170" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
