@@ -7,5 +7,8 @@ Vscode延伸模組下載:
 註冊OpenAI API Key:
 網址 : https://platform.openai.com/settings/organization/api-keys
 
+降版本
+pip install httpx==0.23.0
+
 運行應用程式:
 streamlit run test.py
