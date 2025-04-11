@@ -3,6 +3,7 @@ import os
 import time
 import streamlit as st
 from dotenv import load_dotenv
+import datetime
 
 # 載入 API Key
 load_dotenv()
@@ -19,6 +20,7 @@ client = openai.OpenAI(api_key=api_key)
 def diagnose_computer_issue(issue_description, model_choice, max_retries=3):
     """ 使用 OpenAI API 診斷電腦硬體問題，並支援不同模型 """
     retries = 0
+    start = datetime.datetime.now()
     while retries < max_retries:
         try:
             response = client.chat.completions.create(
@@ -27,9 +29,14 @@ def diagnose_computer_issue(issue_description, model_choice, max_retries=3):
                     {"role": "system", "content": "你是一名專業的電腦維修技術人員，請根據用戶描述的問題提供診斷建議。"},
                     {"role": "user", "content": f"我的電腦有問題，描述如下:\n{issue_description}"}
                 ],
-                max_tokens=600,
+                max_tokens=800,
+                # 如果想要回覆固定長度，可以設置這個參數
+                # temperature=0.0,  # 設置為 0.0 可以獲得更一致的結果
+                # 這裡設置為 0.7 以獲得更具創造性的回答
                 temperature=0.7
             )
+            end = datetime.datetime.now()
+            st.write(f"⚙️ GPT API 呼叫耗時: {(end - start).total_seconds()} 秒")
             return response.choices[0].message.content
         except openai.RateLimitError:
             st.warning("⚠️ API 速率限制，等待 10 秒後重試...")

@@ -12,3 +12,7 @@ pip install httpx==0.23.0
 
 運行應用程式:
 streamlit run test.py
+
+
+如何在A100使用llama3.1-70b:
+https://build.nvidia.com/meta/llama-3_1-70b-instruct
