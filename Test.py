@@ -21,27 +21,50 @@ def diagnose_computer_issue(issue_description, model_choice, max_retries=3):
     """ 使用 OpenAI API 診斷電腦硬體問題，並支援不同模型 """
     retries = 0
     start = datetime.datetime.now()
+
+    # ✅ 建立進度條
+    progress_text = "🧠 診斷中，請稍候..."
+    progress_bar = st.progress(0, text=progress_text)
+
     while retries < max_retries:
         try:
+            # 模擬進度條前段等待
+            for percent in range(0, 30, 10):
+                time.sleep(0.2)
+                progress_bar.progress(percent, text=progress_text)
+
+            # GPT API 呼叫
             response = client.chat.completions.create(
                 model=model_choice,  # 使用者選擇的模型
                 messages=[
                     {"role": "system", "content": "你是一名專業的電腦維修技術人員，請根據用戶描述的問題提供診斷建議。"},
                     {"role": "user", "content": f"我的電腦有問題，描述如下:\n{issue_description}"}
                 ],
-                max_tokens=800,
+                max_tokens=300,
                 # 如果想要回覆固定長度，可以設置這個參數
                 # temperature=0.0,  # 設置為 0.0 可以獲得更一致的結果
                 # 這裡設置為 0.7 以獲得更具創造性的回答
                 temperature=0.7
             )
+
+            # 模擬進度條完成階段
+            for percent in range(30, 101, 20):
+                time.sleep(0.1)
+                progress_bar.progress(percent, text=progress_text)
+
             end = datetime.datetime.now()
-            st.write(f"⚙️ GPT API 呼叫耗時: {(end - start).total_seconds()} 秒")
+            st.write(f"⚙️ GPT API 呼叫耗時: {(end - start).total_seconds():.2f} 秒")
+
+            # 清除進度條
+            progress_bar.empty()
             return response.choices[0].message.content
+
         except openai.RateLimitError:
             st.warning("⚠️ API 速率限制，等待 10 秒後重試...")
             time.sleep(10)
             retries += 1
+
+    progress_bar.empty()
     return "❌ 無法診斷，請稍後再試。"
 
 # Streamlit UI 設定
