@@ -40,7 +40,7 @@ def diagnose_computer_issue(issue_description, model_choice, max_retries=3):
                     {"role": "system", "content": "你是一名專業的電腦維修技術人員，請根據用戶描述的問題提供診斷建議。"},
                     {"role": "user", "content": f"我的電腦有問題，描述如下:\n{issue_description}"}
                 ],
-                max_tokens=300,
+                max_tokens=700,
                 # 如果想要回覆固定長度，可以設置這個參數
                 # temperature=0.0,  # 設置為 0.0 可以獲得更一致的結果
                 # 這裡設置為 0.7 以獲得更具創造性的回答
