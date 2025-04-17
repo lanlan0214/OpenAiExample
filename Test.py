@@ -72,7 +72,7 @@ st.title("💻 電腦硬體診斷助手")
 st.write("請輸入你的電腦問題，系統將幫你診斷可能的原因與解決方案。")
 
 # **新增 GPT 模型選擇**
-model_choice = st.radio("選擇 GPT 模型", ["gpt-3.5-turbo", "gpt-4-turbo"], index=0)
+model_choice = st.radio("選擇 GPT 模型", ["gpt-3.5-turbo", "gpt-4-turbo", "gpt-4.1"], index=0)
 
 # 使用者輸入問題
 user_input = st.text_area("請描述你的電腦問題，例如『開機黑屏但風扇還在轉』")

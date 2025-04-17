@@ -16,3 +16,9 @@ streamlit run test.py
 
 如何在A100使用llama3.1-70b:
 https://build.nvidia.com/meta/llama-3_1-70b-instruct
+
+像GPT一樣的搜尋功能
+安裝 SerpAPI（用來呼叫 Google 搜尋）
+pip install google-search-results
+
+https://serpapi.com/ 這邊註冊帳號 取得API Key
