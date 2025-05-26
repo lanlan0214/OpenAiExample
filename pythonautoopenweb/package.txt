@@ -1,0 +1,2 @@
+打包指令: pyinstaller --onefile --noconsole auto.py
+要把vbs檔案 放在 windows+r 輸入指令 shell:startup

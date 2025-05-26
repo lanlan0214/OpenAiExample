@@ -44,7 +44,7 @@ def diagnose_computer_issue(issue_description, model_choice, max_retries=3):
                 # 如果想要回覆固定長度，可以設置這個參數
                 # temperature=0.0,  # 設置為 0.0 可以獲得更一致的結果
                 # 這裡設置為 0.7 以獲得更具創造性的回答
-                temperature=0.7
+                temperature=1
             )
 
             # 模擬進度條完成階段
